@@ -1,18 +1,15 @@
 import React from "react";
+import trackImg from "../assets/images/track.png";
 
-function Features() {
+function Features({ imgSrc, body, heading }) {
   return (
-    <div>
+    <div className="eachFeature">
       <div className="image">
-        <img src="../assets/images/track.png" alt="" />
+        <img src={imgSrc} alt="" />
       </div>
       <div className="text">
-        <div className="heading">Keep Track of your Assets</div>
-        <div className="body">
-          Track your assets and monitor their growth seamlessly. With MAPP the
-          total value of your cash, investments, real estate and digital assets
-          are organised and consolidated.
-        </div>
+        <h3 className="heading">{heading}</h3>
+        <div className="body">{body}</div>
       </div>
     </div>
   );

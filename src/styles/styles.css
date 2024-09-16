@@ -93,12 +93,38 @@ body {
   color: black;
   display: grid;
   gap: 3em;
-  background-color: white;
+  background-color: #f7fbf9;
   padding: 3em 4em;
+  font-family: Helvetica, sans-serif;
 }
 .keyFeatures h2 {
   text-align: center;
-  font-family: plus jakata sans;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 700;
+}
+.keyFeatures .content {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em;
+}
+.keyFeatures .eachFeature {
+  display: flex;
+  align-items: end;
+  background-color: #ebf5f0;
+  border-radius: 1em;
+}
+.keyFeatures .eachFeature .text {
+  padding: 1em;
+  display: grid;
+  gap: 1em;
+}
+.keyFeatures .eachFeature h4 {
+  font-family: plus jakata sans;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.keyFeatures .eachFeature p {
+  font-family: helvetica neue;
+  font-size: 1.2em;
 }/*# sourceMappingURL=styles.css.map */
